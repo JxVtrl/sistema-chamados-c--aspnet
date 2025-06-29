@@ -1,0 +1,21 @@
+@model ChamadosTecnicos.Models.Ticket
+
+@{
+    ViewData["Title"] = "Excluir Chamado";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<h4>Tem certeza que deseja excluir este chamado?</h4>
+
+<div>
+    <strong>Título:</strong> @Model.Titulo<br />
+    <strong>Status:</strong> @Model.Status<br />
+    <strong>Data de Criação:</strong> @Model.DataCriacao.ToString("dd/MM/yyyy HH:mm")
+</div>
+
+<form asp-action="DeleteConfirmed" method="post">
+    <input type="hidden" asp-for="Id" />
+    <button type="submit" class="btn btn-danger mt-3">Excluir</button>
+    <a asp-action="Index" class="btn btn-secondary mt-3">Cancelar</a>
+</form>
