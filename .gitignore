@@ -1,0 +1,28 @@
+# Compiled source
+bin/
+obj/
+
+# VS Code settings
+.vscode/
+.vs/
+
+# User-specific files
+*.user
+*.suo
+
+# SQLite database file (se não quiser versionar)
+chamados.db
+
+# EF Core Migrations (opcional, dependendo do time)
+Migrations/
+
+# Logs
+*.log
+
+# Build results
+dist/
+out/
+
+# OS junk files
+.DS_Store
+Thumbs.db
